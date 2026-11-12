@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Better Human · Webcomic</title>
+<style>
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #171714; color: #eee8dc; }
+  body { max-width: 740px; margin: auto; }
+  header, footer { padding: 2rem 1.25rem; }
+  header { border-bottom: 1px solid #534b3f; }
+  h1 { font-family: Georgia, serif; font-size: clamp(2.75rem, 9vw, 5rem); font-weight: 400; line-height: 1; margin: 0 0 1.25rem; }
+  h2 { margin: 1.25rem; font-size: 1.25rem; }
+  label { display: block; margin-bottom: .4rem; }
+  select { max-width: 100%; padding: .55rem; font: inherit; }
+  figure { margin: 0 0 .75rem; }
+  img { display: block; width: 100%; height: auto; }
+  footer { display: flex; justify-content: space-between; gap: 1rem; }
+  a { color: #e7ca94; }
+  .pending { margin: 1.25rem; }
+</style>
+<header>
+  <h1>Better Human</h1>
+  <p>Draft webcomic adaptation</p>
+  <label for="episodes">Episode</label>
+  <select id="episodes"></select>
+</header>
+<main id="episode" aria-labelledby="episode-title"></main>
+<footer>
+  <a id="previous">Previous episode</a>
+  <a id="next">Next episode</a>
+</footer>
+<script src="episodes.js"></script>
+<script>
+  const select = document.querySelector('#episodes');
+  const reader = document.querySelector('#episode');
+  const previous = document.querySelector('#previous');
+  const next = document.querySelector('#next');
+  const episodeHash = index => '#episode-' + String(index + 1).padStart(2, '0');
+
+  episodes.forEach(({ title }, index) => {
+    select.add(new Option(`${index + 1}. ${title}`, episodeHash(index)));
+  });
+
+  function renderEpisode() {
+    const requestedIndex = episodes.findIndex((_, index) => episodeHash(index) === location.hash);
+    const index = Math.max(0, requestedIndex);
+    const { title, strips } = episodes[index];
+    select.selectedIndex = index;
+    document.title = `${title} · Better Human`;
+    const heading = document.createElement('h2');
+    heading.id = 'episode-title';
+    heading.textContent = `Episode ${index + 1} · ${title}`;
+    reader.replaceChildren(heading);
+
+    strips.forEach(({ file, description }) => {
+      const figure = document.createElement('figure');
+      const image = document.createElement('img');
+      image.alt = description;
+      image.src = file;
+      figure.append(image);
+      reader.append(figure);
+    });
+
+    if (strips.length < 2) {
+      const status = document.createElement('p');
+      status.className = 'pending';
+      status.textContent = 'This episode is still in production.';
+      reader.append(status);
+    }
+    previous.hidden = index === 0;
+    previous.href = episodeHash(index - 1);
+    next.hidden = index === episodes.length - 1;
+    next.href = episodeHash(index + 1);
+    window.scrollTo(0, 0);
+  }
+
+  select.addEventListener('change', () => { location.hash = select.value; });
+  window.addEventListener('hashchange', renderEpisode);
+  renderEpisode();
+</script>
+</html>
