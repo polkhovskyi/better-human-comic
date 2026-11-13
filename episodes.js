@@ -167,5 +167,14 @@ const episodes = [
         "description": "Sam compares Wisdom and Intelligence by watching his Mana change. He wraps the elk's Common core in a sock. At the ford, he identifies Bluecap mushrooms that restore Mana. The log he was watching opens its mouth. SYSTEM: “Mud Lurker. Level: 15.” Owen takes the charge. Sam drives the lurker back with improvised mana balls. Hana catches and fires a second charged arrow. The kill takes Sam to level 13. Sam heals Owen's leg. Nadia is astonished he can throw mana without taking Mana Bolt. Sam tries Vitality and watches Health rise from 152 to 170. Out of socks, he wraps the dark core in the shopping bag."
       }
     ]
+  },
+  {
+    "title": "Chapter 14 — Ashbell",
+    "strips": [
+      {
+        "file": "strips/ch-0014-bf8b33315f44-strip-01-20261113-a.png",
+        "description": "Generated proposal — review before publication"
+      }
+    ]
   }
 ];
