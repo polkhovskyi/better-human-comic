@@ -167,5 +167,18 @@ const episodes = [
         "description": "Sam compares Wisdom and Intelligence by watching his Mana change. He wraps the elk's Common core in a sock. At the ford, he identifies Bluecap mushrooms that restore Mana. The log he was watching opens its mouth. SYSTEM: “Mud Lurker. Level: 15.” Owen takes the charge. Sam drives the lurker back with improvised mana balls. Hana catches and fires a second charged arrow. The kill takes Sam to level 13. Sam heals Owen's leg. Nadia is astonished he can throw mana without taking Mana Bolt. Sam tries Vitality and watches Health rise from 152 to 170. Out of socks, he wraps the dark core in the shopping bag."
       }
     ]
+  },
+  {
+    "title": "Ashbell",
+    "strips": [
+      {
+        "file": "strips/episode-14-1.webp",
+        "description": "Sam returns at dusk with the lurker's tail. GUARD: “You look like a jumble sale.” SAM: “Thank you.” Toby's Stabilize holds Owen's calf wound while Sam's Health goes in. Grace registers the cores and lets Sam keep them. Carl challenges Sam in the canteen; Owen backs him. In the morning kitchen, Dev brings in what he thinks is wild garlic. SAM: “Stop.” Identify: Ashbell, a toxic herb that causes numbness and paralysis. AGGIE: “Then we don't eat them either. Easy.”"
+      },
+      {
+        "file": "strips/episode-14-2.webp",
+        "description": "Dev asks Sam to teach him. Finn watches Sam sort his bag. FINN: “You need a bigger bag.” SAM: “I need a system.” Declan of Kingsway, level 22, arrives with a crate of gifts. Sam warns him about skitter legs and the false garlic. DECLAN: “The garlic. That's two of the four.” GRACE: “And the price?” DECLAN: “No price. Neighbors.” He offers Sam a bed at Kingsway and claims the weir. CARL: “The weir's ours.” GRACE: “The question's what he'll do with remembering it.”"
+      }
+    ]
   }
 ];
