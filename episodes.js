@@ -180,5 +180,18 @@ const episodes = [
         "description": "Dev asks Sam to teach him. Finn watches Sam sort his bag. FINN: “You need a bigger bag.” SAM: “I need a system.” Declan of Kingsway, level 22, arrives with a crate of gifts. Sam warns him about skitter legs and the false garlic. DECLAN: “The garlic. That's two of the four.” GRACE: “And the price?” DECLAN: “No price. Neighbors.” He offers Sam a bed at Kingsway and claims the weir. CARL: “The weir's ours.” GRACE: “The question's what he'll do with remembering it.”"
       }
     ]
+  },
+  {
+    "title": "Faster",
+    "strips": [
+      {
+        "file": "strips/episode-15-1.webp",
+        "description": "Carl joins the hunt. CARL: “Grace said the Healer needs keeping safe.” In the woods Sam reads the threads of something heavy rooting. A level 18 Brackenback Boar sleeps in the stream gully. OWEN: “Don't come in unless someone's down.” It goes wrong almost at once: the boar gores Owen. Sam kneels in the stream with both hands on Owen's thigh, filling a bucket with a hole in the bottom. Then he sees the mana in his own arms narrowing at the wrists. He could see the pipe."
+      },
+      {
+        "file": "strips/episode-15-2.webp",
+        "description": "Sam widens the pathways at his wrists and the healing doubles. SAM: “Hold on. It's working.” The boar falls; Carl gives up his shirt to press the wound. Owen lives. Sam reaches level 14. CARL: “You went in. You didn't even look.” SAM: “I was busy.” On the way back a level 15 Ridge Prowler attacks; Sam drops the tusks and puts three mana balls in it, and Carl finishes it. Level 15. Walking home, Sam looks at his wrists: three Health gone, and nothing to show where."
+      }
+    ]
   }
 ];
