@@ -193,5 +193,18 @@ const episodes = [
         "description": "Sam widens the pathways at his wrists and the healing doubles. SAM: “Hold on. It's working.” The boar falls; Carl gives up his shirt to press the wound. Owen lives. Sam reaches level 14. CARL: “You went in. You didn't even look.” SAM: “I was busy.” On the way back a level 15 Ridge Prowler attacks; Sam drops the tusks and puts three mana balls in it, and Carl finishes it. Level 15. Walking home, Sam looks at his wrists: three Health gone, and nothing to show where."
       }
     ]
+  },
+  {
+    "title": "Practice",
+    "strips": [
+      {
+        "file": "strips/episode-16-1.webp",
+        "description": ""
+      },
+      {
+        "file": "strips/episode-16-2.webp",
+        "description": ""
+      }
+    ]
   }
 ];
