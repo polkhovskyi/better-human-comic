@@ -206,5 +206,18 @@ const episodes = [
         "description": ""
       }
     ]
+  },
+  {
+    "title": "The Weir",
+    "strips": [
+      {
+        "file": "strips/episode-17-1.webp",
+        "description": ""
+      },
+      {
+        "file": "strips/episode-17-2.webp",
+        "description": ""
+      }
+    ]
   }
 ];
