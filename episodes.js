@@ -219,5 +219,18 @@ const episodes = [
         "description": ""
       }
     ]
+  },
+  {
+    "title": "Trail Arrows",
+    "strips": [
+      {
+        "file": "strips/episode-18-1.webp",
+        "description": ""
+      },
+      {
+        "file": "strips/episode-18-2.webp",
+        "description": ""
+      }
+    ]
   }
 ];
