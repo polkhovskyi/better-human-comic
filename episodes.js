@@ -232,5 +232,18 @@ const episodes = [
         "description": ""
       }
     ]
+  },
+  {
+    "title": "Night Things",
+    "strips": [
+      {
+        "file": "strips/episode-19-1.webp",
+        "description": ""
+      },
+      {
+        "file": "strips/episode-19-2.webp",
+        "description": ""
+      }
+    ]
   }
 ];
